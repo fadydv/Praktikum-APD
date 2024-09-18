@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2409106087_Andi Nurfadillah Hasan_POSTTEST2"/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-18 12.30.31 AM"/>
+        <attribute name="created" value="VVNFUjtMQVBUT1AtRkUwRjg2NUc7MjAyNC0wOS0xNzsxMC40Mi4wOCBQTTsyNTc5"/>
+        <attribute name="edited" value="VVNFUjtMQVBUT1AtRkUwRjg2NUc7MjAyNC0wOS0xODsxMi4zMC4zMSBBTTszOzI2NzA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="namabarang" type="String" array="False" size=""/>
+            <declare name="hargabarang" type="Real" array="False" size=""/>
+            <declare name="jumlahbarang" type="Integer" array="False" size=""/>
+            <declare name="diskon" type="Real" array="False" size=""/>
+            <declare name="totalsebelumdiskon" type="Real" array="False" size=""/>
+            <declare name="totaldiskon" type="Real" array="False" size=""/>
+            <declare name="totalbayar" type="Real" array="False" size=""/>
+            <declare name="sisapembagian" type="Integer" array="False" size=""/>
+            <output expression="&quot;Informasi Transaksi Belanja&quot;" newline="True"/>
+            <output expression="&quot;Masukkan nama barang&quot;" newline="True"/>
+            <input variable="namabarang"/>
+            <output expression="&quot;Masukkan harga barang&quot;" newline="True"/>
+            <input variable="hargabarang"/>
+            <output expression="&quot;Masukkan jumlah barang&quot;" newline="True"/>
+            <input variable="jumlahbarang"/>
+            <assign variable="diskon" expression="0.87"/>
+            <assign variable="totalsebelumdiskon" expression="jumlahbarang * hargabarang"/>
+            <assign variable="totaldiskon" expression="diskon/100 * totalsebelumdiskon"/>
+            <assign variable="totalbayar" expression="totalsebelumdiskon - totaldiskon"/>
+            <assign variable="sisapembagian" expression="87 % 3"/>
+            <output expression="&quot;Anda membeli &quot; &amp; jumlahbarang &amp; namabarang &amp; &quot; dengan harga satuan &quot; &amp; hargabarang &amp; &quot; total sebelum diskon adalah &quot; &amp; totalsebelumdiskon &amp; &quot; total diskon adalah &quot; &amp; totaldiskon &amp; &quot; dan total yang harus dibayar adalah &quot; &amp; totalbayar &amp; &quot; sisa pembagian &quot; &amp; diskon &amp; &quot; dengan 3 adalah &quot; &amp; sisapembagian" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

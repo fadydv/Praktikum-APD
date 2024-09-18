@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Pertamaa"/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-11 11.39.23 PM"/>
+        <attribute name="created" value="VVNFUjtMQVBUT1AtRkUwRjg2NUc7MjAyNC0wOS0xMTswNi4zOS4xMSBQTTsyNTc4"/>
+        <attribute name="edited" value="VVNFUjtMQVBUT1AtRkUwRjg2NUc7MjAyNC0wOS0xMTsxMS4zOS4yMyBQTTszOzI2ODc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="BanyakPengunjung, umur, diskon" type="Integer" array="False" size=""/>
+            <input variable="BanyakPengunjung"/>
+            <if expression="BanyakPengunjung &lt;3">
+                <then>
+                    <output expression="Diskon=0" newline="True"/>
+                </then>
+                <else>
+                    <input variable="UmurPengunjung"/>
+                    <if expression="Umur &lt;12">
+                        <then>
+                            <output expression="0.17" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="Umur&gt;=18">
+                                <then>
+                                    <output expression="0.13" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="Umur &gt; 18">
+                                        <then>
+                                            <output expression="0.10" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
